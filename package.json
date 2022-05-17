@@ -1,0 +1,12 @@
+{
+  "name": "npm-install-from-subdir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd ./subdir && npm install && cp -r ./build ../build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

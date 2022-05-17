@@ -1,0 +1,14 @@
+{
+    "name": "npm-install-from-subdir",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+			"prepack": "[ ! -f .buildme ] || npm run build",
+			"postinstall": "[ ! -f .buildme ] || npm run build",
+			"build": "rm -rf ./build && mkdir build && echo \"build artifacts\" > build/build-artifacts.txt"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  
